@@ -1,5 +1,5 @@
 module MyProject
-export hello, addnums
+export hello, addnums, mulnums
 """
     hello(who::String)
 
@@ -12,4 +12,14 @@ hello(who::String) = "Hello, $who"
 Return `x + y`
 """
 addnums(x::Number, y::Number) = x + y
+
+"""
+    mulnums(x::Number, y::Number)
+Return `z`
+"""
+function mulnums(x::Number, y::Number)
+  z = x * y
+  return z
+end
+
 end
